@@ -1,3 +1,18 @@
+@font-face {
+  font-family: kugile;
+  src: url(../fonts/kugile/Kugile_Demo.ttf);
+}
+
+@font-face {
+  font-family: briliant;
+  src: url(../fonts/brillant/brillant.otf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/inter/Inter-Italic.otf);
+}
+
 img {
   width: 400px;
   margin-left: 35em;
@@ -13,4 +28,42 @@ header {
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  font-family: briliant;
+  text-align: center;
+}
+
+h2 {
+  font-family: kugile;
+  color: rgb(123, 59, 20);
+  text-align: center;
+}
+p {
+  font-family: Inter;
+}
+
+.headercontainer {
+  display: grid;
+  height: 80vh;
+  overflow: hidden;
+}
+.headercontainer > img,
+.headercontainer > div {
+  grid-column: 1;
+  grid-row: 1;
+}
+.headercontainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  object-position: top;
+}
+.headersubcontainer img {
+  max-width: 100%;
+}
+.headersubcontainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
 }
