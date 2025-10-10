@@ -1,3 +1,5 @@
+/*            TYPOGRAFI & SKRIFTTYPE         */
+
 @font-face {
   font-family: kugile;
   src: url(../fonts/kugile/Kugile_Demo.ttf);
@@ -13,6 +15,47 @@
   src: url(../fonts/inter/Inter-Italic.otf);
 }
 
+@font-face {
+  font-family: Alumni Sans Pinstripe, stroke;
+  src: url(../fonts/Alumni_Sans_Pinstripe\BBH_Sans_Bartle\Radio_Canada_Big\Ramabhadra/);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-Italic.otf);
+}
+
+/*            SKRIFTTYPER BRUGT, FARVE, SAMT PLACERING-01       */
+
+h1 {
+  font-family: briliant;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-family: kugile;
+  color: rgb(123, 59, 20);
+  text-align: center;
+}
+h3 {
+  font-family: Alumni Sans Pinstripe, stroke;
+  color: rgb(0, 0, 0);
+}
+p {
+  font-family: Inter;
+  color: rgb(0, 0, 0);
+}
+nav.navfont {
+  font-family: Montserrat;
+  color: rgb(0, 0, 0);
+}
+.knap {
+  font-family: Montserrat;
+  color: rgb(0, 0, 0);
+}
+
+/*              IMAGE PLACERING FØR  HEADER           */
 img {
   width: 400px;
   margin-left: 35em;
@@ -28,19 +71,6 @@ header {
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-}
-h1 {
-  font-family: briliant;
-  text-align: center;
-}
-
-h2 {
-  font-family: kugile;
-  color: rgb(123, 59, 20);
-  text-align: center;
-}
-p {
-  font-family: Inter;
 }
 
 .headercontainer {
