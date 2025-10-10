@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/*
 header {
   position: sticky;
   top: 0;
@@ -18,7 +18,7 @@ header {
   background-color: #ffffff;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
-
+*/
 .logo img {
   width: 50px;
   height: 50px;
@@ -30,8 +30,10 @@ nav {
 }
 
 .menu {
+  width: 100%;
   display: flex;
   list-style: none;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
 }

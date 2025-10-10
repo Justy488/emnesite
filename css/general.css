@@ -9,9 +9,7 @@ header {
   bottom: 0 0 10em 0;
 
   top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
