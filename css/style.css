@@ -1,3 +1,5 @@
+/*
+
 header {
   position: sticky;
   top: 0;
@@ -64,9 +66,7 @@ nav {
 .burger {
   display: none;
 }
-nav ul li a {
-  font-family: "ruigslay", serif;
-}
+
 @media screen and (width < 800px) {
   .menu {
     display: none;
@@ -110,3 +110,4 @@ nav ul li a {
     font-size: 24px;
   }
 }
+*/
