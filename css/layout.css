@@ -3,7 +3,7 @@
 } */
 
 * {
-  margin: 0;
+  /* margin: 0;*/
   padding: 0;
   box-sizing: border-box;
 }
@@ -122,6 +122,10 @@ nav {
 
 /*       LAYOUT AF TEKST, FARVE, SAMT PLACERING-02       */
 
+h1 {
+  margin: 0 3em 1em 0;
+}
+
 h2 {
   display: block;
   padding: 4em 0 2.5em;
@@ -163,4 +167,46 @@ h3 {
   margin-block-end: 1em;
 
   unicode-bidi: isolate;
+}
+
+/*       LAYOUT AF TEKST på BILLEDE, SAMT PLACERING-03      */
+.bund {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.bund img,
+.bund video,
+.bund .animated-box {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 2em;
+  background: #f0f0f0;
+}
+
+/* Øvelse 3 */
+.højre {
+  display: grid;
+}
+.højre img {
+  grid-area: 1 / 1;
+}
+.højre .caption {
+  grid-area: 1 / 1;
+  align-self: end;
+  justify-self: end;
+  color: white;
+  padding: 0.5em;
+}
+
+/*      FOR BILLEDE OVENPÅ BILLEDE*/
+.fotocaption .fotocaption img,
+.fotocaption video,
+.fotocaption .animated-box {
+  width: 100%;
+  display: block;
 }
