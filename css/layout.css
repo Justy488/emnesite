@@ -203,10 +203,11 @@ body {
   padding: 0.5em;
 }
 
-/*      FOR BILLEDE OVENPÅ BILLEDE*/
 .fotocaption .fotocaption img,
 .fotocaption video,
 .fotocaption .animated-box {
   width: 100%;
   display: block;
 }
+
+/*      FOR BILLEDE OVENPÅ BILLEDE*/
