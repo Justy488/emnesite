@@ -188,7 +188,7 @@ body {
   background: #f0f0f0;
 }
 
-/* Øvelse 3 */
+/* Øvelse 3 - omkring billeder og tekst*/
 .højre {
   display: grid;
 }
@@ -210,4 +210,57 @@ body {
   display: block;
 }
 
-/*      FOR BILLEDE OVENPÅ BILLEDE*/
+/*      FOR BILLEDE OVENPÅ BILLEDE - 1 billede med dobbelt billed på header*/
+
+/*      FOR BILLEDE OVENPÅ BILLEDE - 2 billede med dobbelt billed på*/
+
+body {
+  font-family: "Didot", serif;
+  margin: 0;
+  background: #f0f0f0;
+}
+
+/* Container */
+.bund.højre {
+  position: relative;
+  max-width: 900px;
+  margin: 50px auto;
+  display: grid;
+}
+
+/* Baggrundsbillede */
+.background {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Teksten på venstre side */
+.text {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 2.8em;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 8);
+}
+
+/* Portræt-billederne på højre side */
+.portrait-stack {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* afstand mellem billederne */
+}
+
+.portrait-stack img {
+  width: 180px;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
