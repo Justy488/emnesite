@@ -125,6 +125,8 @@ nav {
 
 h1 {
   margin: 0 3em 1em 0;
+  text-align: left;
+  font-size: 3em;
 }
 
 h2 {
@@ -138,7 +140,7 @@ h2 {
   font-weight: bold;
 
   unicode-bidi: isolate;
-  box-shadow: color(burlywood);
+  box: color(burlywood);
 }
 
 p {
