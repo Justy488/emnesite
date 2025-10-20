@@ -82,7 +82,7 @@ header {
 }
 
 .headercontainer {
-  height: 80vh;
+  /* height: 80vh; */
   overflow: hidden;
   padding: 2em 0;
 }

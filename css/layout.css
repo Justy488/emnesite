@@ -325,7 +325,7 @@ body {
 .background03 {
   width: 100%;
   display: block;
-  border-radius: 0;
+
   box-shadow: 0 4px 10px rgba(0, 0, 0, 4);
 }
 
