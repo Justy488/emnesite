@@ -97,3 +97,19 @@ header {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr 1fr;
 }
+
+/*                  Knappen til testen              */
+.knap {
+  font-size: 1em;
+  background-color: rgb(0, 47, 255);
+  padding: 1em 2em;
+  margin: 0.5em auto 2em auto; /* auto centrerer knappen */
+  border-radius: 1.5em;
+  text-decoration: none;
+  display: block; /* skal være block for at auto virker */
+  width: fit-content; /* gør så den ikke fylder hele linjen */
+  color: white;
+}
+.knap:hover {
+  background-color: rgb(8, 83, 56);
+}
