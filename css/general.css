@@ -25,7 +25,17 @@
   src: url(../fonts/montserrat/Montserrat-Italic.otf);
 }
 
+font-face {
+  font-family: barcode;
+  src: url(../fonts/code-2-of-5-interleaved/code25I.ttf);
+}
+
 /*            SKRIFTTYPER BRUGT, FARVE, SAMT PLACERING-01       */
+
+.lillebarcode {
+  display: block;
+  max-width: 70%;
+}
 
 h1 {
   font-family: briliant;
@@ -50,6 +60,7 @@ p {
 nav.navfont {
   font-family: Montserrat;
   color: rgb(0, 0, 0);
+  padding: 1em 1em 1em 1em;
 }
 .knap {
   font-family: Montserrat;
@@ -61,47 +72,28 @@ nav.navfont {
 }
 
 /*              IMAGE PLACERING FØR  HEADER           */
-img {
-  width: 400px;
-  margin-left: 35em;
-  display: block;
-  margin: 2em auto;
+header img.logo {
   border-radius: 0.5em;
 }
 header {
-  bottom: 0 0 10em 0;
-
-  top: 0;
-
-  padding: 20px;
+  /* padding: 20px; */
   background-color: #ffffff;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .headercontainer {
-  display: grid;
   height: 80vh;
   overflow: hidden;
+  padding: 2em 0;
 }
-.headercontainer > img,
-.headercontainer > div {
-  grid-column: 1;
-  grid-row: 1;
-}
-.headercontainer > img {
+
+/* .headercontainer > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 
   object-position: top;
-}
-.headersubcontainer img {
-  max-width: 100%;
-}
-.headersubcontainer {
-  display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr;
-}
+} */
 
 /*                  Knappen til testen              */
 .knap {

@@ -1,12 +1,73 @@
-/* .headercontainer{
-  background-image: url();
-} */
-
 * {
-  /* margin: 0;*/
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Header billeder */
+
+.headercontainer {
+  background-image: url("../galleri/images/billeder02/baggrund04.webp");
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.headercontainer .logo {
+  grid-row: 1 / -1;
+  /* spanner over alle rækker */
+}
+
+.headercontainer img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.headercontainer .first {
+  grid-row: span 2 / -1;
+}
+
+.headercontainer .second {
+  grid-row: 2 / span 2;
+}
+
+.headercontainer .third {
+  grid-column: 4;
+  grid-row: span 2;
+}
+
+/*            under billeder about hair */
+
+.minicontainer {
+  background-image: url(../galleri/images/billeder02/baggrund02\\(2).webp);
+}
+
+.minicontainer img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.minicontainer .first {
+  grid-row: span 2 / -1;
+}
+
+.minicontainer .second {
+  grid-row: 2 / span 2;
+}
+
+.minicontainer .third {
+  grid-column: 4;
+  grid-row: span 2;
+}
+
 /*
 header {
   position: sticky;
@@ -27,6 +88,7 @@ header {
 nav {
   display: flex;
   align-items: center;
+  padding-block-start: 1rem;
 }
 
 .menu {
@@ -251,10 +313,11 @@ body {
 }
 
 /* Baggrundsbillede */
-.background {
+.background03 {
   width: 100%;
   display: block;
-  border-radius: 10px;
+  border-radius: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 4);
 }
 
 /* Teksten på venstre side */
