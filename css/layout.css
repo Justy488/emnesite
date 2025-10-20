@@ -47,25 +47,34 @@ img {
 /*            under billeder about hair */
 
 .minicontainer {
-  background-image: url(../galleri/images/billeder02/baggrund02\\(2).webp);
+  background-image: url(../galleri/images/billeder02/);
 }
 
 .minicontainer img {
+  display: block;
+  width: 60%;
   height: 100%;
   object-fit: cover;
 }
 
 .minicontainer .first {
-  grid-row: span 2 / -1;
+  grid-row: span 1 / -1;
+  grid-column: 1;
 }
 
 .minicontainer .second {
-  grid-row: 2 / span 2;
+  grid-row: 1 / span 1;
+  grid-column: 2;
 }
 
 .minicontainer .third {
-  grid-column: 4;
-  grid-row: span 2;
+  grid-column: 1;
+  grid-row: 1 / span 1;
+}
+
+.minicontainer .fourth {
+  grid-column: 2;
+  grid-row: 1 / span 1;
 }
 
 /*
