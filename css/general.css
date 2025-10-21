@@ -25,7 +25,7 @@
   src: url(../fonts/montserrat/Montserrat-Italic.otf);
 }
 
-font-face {
+@font-face {
   font-family: barcode;
   src: url(../fonts/code-2-of-5-interleaved/code25I.ttf);
 }
@@ -35,13 +35,25 @@ font-face {
 .lillebarcode {
   display: block;
   max-width: 70%;
+  padding: 0 0 0 18em;
+}
+
+.footerimg {
+  padding: 0;
+  margin: 2em 8em; /* margin: 2em 14em; */
+  width: 50%;
+  align-items: center;
+}
+
+.credit {
+  text-align: center;
 }
 
 h1 {
   font-family: briliant;
   text-align: center;
 
-  color: rgba(255, 255, 255, alpha);
+  color: rgba(255, 255, 255, 8);
 }
 
 h2 {
@@ -129,4 +141,65 @@ header {
 
 .button:hover {
   background-color: rgb(16, 137, 135);
+}
+
+/*        tre billeder         */
+
+.gallery .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 2rem; */
+  position: relative;
+}
+
+.card {
+  width: 180px;
+  height: 280px;
+  border-radius: 30px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+  filter: blur(2px) brightness(0.8);
+  transform: scale(0.9);
+  opacity: 0.6;
+}
+
+/* Midterste kort i fokus */
+.card.center {
+  filter: none;
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Venstre og højre kort lidt bagved */
+.card.left {
+  transform: translateX(-20px) scale(0.9);
+}
+
+.card.right {
+  transform: translateX(20px) scale(0.9);
+}
+
+.card.center {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.pretty {
+  max-width: 80%;
+  grid-column: span 2;
+}
+
+.pretty02 {
+  display: grid;
+  max-width: 80%;
+  object-fit: cover;
+  grid-template-columns: 2fr 2fr;
+  gap: 2rem;
+  padding: 0 0 6em 5em;
+  margin: 0;
+  align-items: center;
+}
+.box03 .box04 {
+  grid-column: span 2;
 }

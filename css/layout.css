@@ -48,33 +48,65 @@ img {
 
 .minicontainer {
   background-image: url(../galleri/images/billeder02/);
+  padding: 4rem 2rem; /* top/bund højre/venstre */
 }
-
+.minicontainer h1,
+.minicontainer p {
+  margin: 0;
+  padding: 0;
+}
+/* 
 .minicontainer img {
   display: block;
   width: 60%;
   height: 100%;
   object-fit: cover;
+  
 }
 
 .minicontainer .first {
-  grid-row: span 1 / -1;
+  grid-row: span 1;
   grid-column: 1;
 }
 
 .minicontainer .second {
-  grid-row: 1 / span 1;
+  grid-row: 1;
   grid-column: 2;
 }
 
 .minicontainer .third {
-  grid-column: 1;
-  grid-row: 1 / span 1;
+  grid-column: 4;
+  grid-row: 1;
 }
 
 .minicontainer .fourth {
   grid-column: 2;
   grid-row: 1 / span 1;
+} */
+
+.minicontainer img {
+  display: grid;
+  object-fit: cover;
+}
+
+.minicontainer {
+  background-image: url("../galleri/images/billeder02/baggrund02\ \(2\).webp");
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 1rem;
+}
+
+.boxtext {
+  grid-column: -2;
+  grid-row: 1 / span 2;
+}
+
+.boxtext {
+  font-family: briliant;
+
+  color: rgba(255, 255, 255);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 8);
 }
 
 /*
@@ -147,7 +179,7 @@ nav {
 .burger {
   display: none;
 }
-@media screen and (width < 800px) {
+@media (min-width: 768px) {
   .menu {
     display: none;
   }
@@ -339,6 +371,11 @@ body {
   font-size: 1em;
   font-weight: 300;
   letter-spacing: 2px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 8);
+}
+
+.minitext {
+  color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 8);
 }
 
